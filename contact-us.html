@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from zedthemes.com/demo/newsroom/demo2/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jun 2019 16:49:45 GMT -->
+<!-- Mirrored from zedthemes.com/demo/newsroom/demo2/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jun 2019 16:49:40 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newsroom -  Multi Purpose Blog Template</title>
-
+    <title>Web Solutions Tricks -  Blogs</title>
+	
     <!-- Bootstrap -->
     	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- owl-carousel -->
@@ -33,9 +33,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+<style>
+.navbar-collapse collapse {
+  padding: 10px 16px;
+  background-color:blue;
+  color: #f1f1f1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:white;
+}
+.container {
+  padding: 16px;
+}
+.sticky + .container {
+  padding-top: 102px;
+}
+
+</style>
 </head>
-<body>
+<body class="home_style2">
 
 <!--header-navigation-->
 <header>
@@ -64,12 +83,12 @@
         </div>
     </div>    
      
-    <div class="container text-center">
+     <div class="container text-center">
     	<div class="row">
 	        <div class="col-md-12">
         <div class="logo_wrap">
-           <h2 style="color:green;font-family:geomanist,Helvetica,Arial;">Web Solutions Tricks</h2>
-		   <h4>Creative Thinking Of Web Developing</h4>
+           <h3 style="color:#00aaff;font-weight:bold;">Web Solutions Tricks</h3>
+		   <h6 style="color:hotpink;">Creative Thinking Of Web Developing</h6>
         </div>
     </div>
 		</div>        
@@ -86,29 +105,47 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="myHeader">
                     <ul class="nav navbar-nav">
                         <li>
-                          <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                          <a href="gallery-post-format.html">Tutorials</a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="index.html">Home</a>
                         </li>
                         <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" class="dropdown-toggle" data-toggle="dropdown">Web Design<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="HTML/indexhtml.html">HTML</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">CSS</a></li>
+		<li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Bootstrap</a></li>
+						</ul>
+                        </li>
+                        <li class="dropdown">
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Php</a></li>
-                            <li><a href="#">Code Igniter</a></li>
-                            <li><a href="#">Jquery</a></li>
-                            <li><a href="#">My Sql</a></li>
-                            <li><a href="#">Angular Js</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="PHP/php.html">Php</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Code Igniter</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'"  style="font-family:geomanist,Helvetica,Arial;" href="#">Jquery</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">My Sql</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Angular Js</a></li>
                            
                           </ul>
                         </li>
                         <li>
-                          <a href="about.html">About Us</a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="about.html">About Us</a>
                         </li>
-                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="contact-us.html">Contact us</a></li>
                     </ul>            
                 </div>
         </div>
@@ -119,7 +156,20 @@
     
       
 </header>
-<!--hedaer-navigation end-->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 <section>
 	<div class="container">

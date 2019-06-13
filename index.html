@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web Solutions Tricks -  Blogs</title>
-
+	
     <!-- Bootstrap -->
     	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- owl-carousel -->
@@ -33,14 +33,26 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <style>
-  .card-text{
-  text-align: justify;
-  text-justify: inter-word;
-  font-family:geomanist, Helvetica, Arial;
-  color:blue;
-  }
-  </style>   
+<style>
+.navbar-collapse collapse {
+  padding: 10px 16px;
+  background-color:blue;
+  color: #f1f1f1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:white;
+}
+.container {
+  padding: 16px;
+}
+.sticky + .container {
+  padding-top: 102px;
+}
+
+</style>
 </head>
 <body class="home_style2">
 
@@ -75,8 +87,8 @@
     	<div class="row">
 	        <div class="col-md-12">
         <div class="logo_wrap">
-           <h2 style="color:green;font-family:geomanist,Helvetica,Arial;">Web Solutions Tricks</h2>
-		   <h4>Creative Thinking Of Web Developing</h4>
+           <h3 style="color:#00aaff;font-weight:bold;">Web Solutions Tricks</h3>
+		   <h6 style="color:hotpink;">Creative Thinking Of Web Developing</h6>
         </div>
     </div>
 		</div>        
@@ -93,29 +105,47 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="myHeader">
                     <ul class="nav navbar-nav">
                         <li>
-                          <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                          <a href="gallery-post-format.html">Tutorials</a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="index.html">Home</a>
                         </li>
                         <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" class="dropdown-toggle" data-toggle="dropdown">Web Design<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="HTML/indexhtml.html">HTML</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">CSS</a></li>
+		<li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Bootstrap</a></li>
+						</ul>
+                        </li>
+                        <li class="dropdown">
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Php</a></li>
-                            <li><a href="#">Code Igniter</a></li>
-                            <li><a href="#">Jquery</a></li>
-                            <li><a href="#">My Sql</a></li>
-                            <li><a href="#">Angular Js</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="PHP/php.html">Php</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Code Igniter</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'"  style="font-family:geomanist,Helvetica,Arial;" href="#">Jquery</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">My Sql</a></li>
+                            <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='white'" style="font-family:geomanist,Helvetica,Arial;" href="#">Angular Js</a></li>
                            
                           </ul>
                         </li>
                         <li>
-                          <a href="about.html">About Us</a>
+                          <a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="about.html">About Us</a>
                         </li>
-                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-family:geomanist,Helvetica,Arial;" href="contact-us.html">Contact us</a></li>
                     </ul>            
                 </div>
         </div>
@@ -126,53 +156,66 @@
     
       
 </header>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 <!--hedaer-navigation end-->
 
 <section class="articles_psot_wrap">
 	<div class="container">
     	<div class="row">
 	        <div class="col-lg-8 col-md-12 col-lg-push-2">
+			
             <article class="standard-post-format">
-				
-          <h3 class="card-title">
-            <a href="#">Multi operational Datatable (Footer Callback, Export Reports, Hide Column, Date Range Filter, Individuval Search).</a>
-          </h3>
-                
+			 <div class="post_header entry-header">
+			 
+                    <h3 class="post_title entry-title"><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-weight:bold;text-transform: capitalize;text-decoration:none;text-align: justify;text-justify: inter-word;"href="PHP/multidatatable.html">Multi operational Datatable In PHP (Footer Callback, Export Reports, Hide Column, Date Range Filter, Individuval Search)</a></h3>
+		<p><h6 onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" class="glyphicon glyphicon-user" style="font-weight:bold;text-transform: capitalize;">WebSolutionTricks</h6></span> <h6 onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-weight:bold;text-transform: capitalize;">PHP Datatable With Footer Callback,Date Range Filter,Individual Search,Column Hide And Unhide Option,Export Reports options</h6></p>
+                </div>          
                 <div class="post_featured_image">
-                    <a href="#"><img src="images/multidatatable.jpg" alt="post-image"></a>
+				 
+                    <a href="#"><img src="images/datatable.jpg" alt="post-image"></a>
                </div>
                 <div class="post_content entry-content">
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.  All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                    <p><a href="#" class="btn">read more</a></p>	
+                    <p>This datatable multi functional working.If you are looking for most optional datatable you are land correct place.we are creating such a datatable for showing you.We are explaining step by step tutorials.So you following vey easily.You can see above image...</p>
+                    <p><a href="PHP/multidatatable.html" class="btn">read more</a></p>	
                 </div>
             </article>
             
             <article class="standard-post-format">
-                <div class="post_header entry-header">
-                    <h2 class="post_title entry-title"><a href="#">There are many variations of passages of Lorem Ipsum.</a></h2>
-                </div>
+			 <div class="post_header entry-header">
+			 
+                    <h3 class="post_title entry-title"><a onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-weight:bold;text-transform: capitalize;text-decoration:none;text-align: justify;text-justify: inter-word;"href="#">Carousel Slider with hover effect | Backgroung Video link</a></h3>
+		<p><h6 onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" class="glyphicon glyphicon-user" style="font-weight:bold;text-transform: capitalize;">WebSolutionTricks</h6></span> <h6 onMouseOver="this.style.color='#00aaff'"
+        onMouseOut="this.style.color='black'" style="font-weight:bold;text-transform: capitalize;">HTML Carosel Slider hover effect & Video Link</h6></p>
+                </div>          
                 <div class="post_featured_image">
-                    <a href="#"><img src="images/image-2-770x433.jpg" alt="post-image"></a>
+				 
+                    <a href="#"><img src="images/slider.jpg" alt="post-image"></a>
                </div>
-                <div class="post_meta_elements ">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-8">
-                            <span class="post_categories"> <a href="#">City Guide</a></span>
-                            <span class="post_by"> Post By : <a href="#">Admin</a></span>
-                            <span class="post_date"> March 10, 2016</span>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <span class="post_counters_comments"><a href="#"><span class="post_counters_number">4</span> Comments</a></span>
-                        </div>
-                        
-                    </div>
-                </div>
                 <div class="post_content entry-content">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-                    <p><a href="#" class="btn">read more</a></p>	
+                    <p>This HTML Carosel Slider is simple and powerful html slider.This carosel slider has hover zooming effect are available.You are searching video linkable carosel.This tutorial surely help to you.We are developing carosel with slider,hover effect,video linking...</p>
+                    <p><a href="HTML/carosel.html" class="btn">read more</a></p>	
                 </div>
             </article>
-            
+			
+			
             <article class="standard-post-format">
                 <div class="post_header entry-header">
                     <h2 class="post_title entry-title"><a href="#">Contrary to popular belief, Lorem Ipsum.</a></h2>
@@ -227,11 +270,10 @@
             <div class="footer-link">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Life</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                   
                 </ul>
             </div>
             <div class="social_wrap">
